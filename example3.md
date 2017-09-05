@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Table
-permalink: /table/
+permalink: "/table/"
+layout: page
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
