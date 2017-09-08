@@ -10,16 +10,49 @@ layout: default
         <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
         <p class="post-meta">
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
             {{ page.date | date: date_format }}
           </time>
+          
           {% if page.author %}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
           {% endif %}</p>
+          
+          <div class="right" style="position: relative; height: 70px;">
+            <div class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; bottom: 100%;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">share</i>
+    </a>
+    
+    
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+    <ul class="a2a_kit a2a_kit_size_32 a2a_default_style">
+      <li><a class="btn-floating a2a_dd" href="https://www.addtoany.com/share"></a></li>
+      <li><a class="btn-floating red a2a_button_google_plus"></a></li>
+      
+      <li><a class="btn-floating blue a2a_button_facebook"></a></li>
+      <li><a class="btn-floating sky-blue a2a_button_twitter"></a></li>
+    </ul>
+  </div>
+          </div>
+        
       </header>
 
       <div class="post-content" itemprop="articleBody">
         {{ content }}
+          {% if page.categories %}
+          {% for category in page.categories %}
+          <div class="chip">{{ category }}</div>
+           {% endfor %}
+          {% endif %}
+          
+          {% for tag in taxonomy.tags %}
+    
+       <div class="chip"><i class="material-icons">label</i> <a href="{{ tag.url }}">{{ tag.value }}</a></div>
+    
+{% endfor %}
+
       </div>
 
       {% if site.disqus.shortname %}
@@ -28,4 +61,3 @@ layout: default
     </article>
     </div>
 </div>
-<script>$('.carousel.carousel-slider').carousel({fullWidth: true});</script>
