@@ -1,6 +1,6 @@
 ---
-title: Starter Template
-timezone: UTC
+title: PHPBees
+timezone: Asia/Kolkata
 collections:
   posts:
     title: Posts
@@ -8,12 +8,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-author: Panoramedia
-email: panoramedia@gmail.com
-description: 'A Site Starter Materialize Templates for Jekyll
-
-'
-twitter_username: macrod68
-github_username: macrod68
+author: Smit Shah
+email: smitshah81@gmail.com
+description: "\n"
+twitter_username: smit_shah_
+github_username: smitshah81
 sass:
   style: compressed
