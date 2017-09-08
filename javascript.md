@@ -1,5 +1,5 @@
 ---
-title: CSS
+title: Javascript
 permalink: "/css/"
 layout: page
 ---
