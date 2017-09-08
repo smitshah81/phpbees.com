@@ -3,23 +3,23 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">About Me</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <p class="grey-text text-lighten-4">I am Programmer and I had created this blog for people like me who are facing challenges every day in programming.</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Tags</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            {% for tag in taxonomy.tags %}
+             <li class="chip"><i class="material-icons">label</i> <a href="{{ tag.url }}">{{ tag.value }}</a></li>
+            {% endfor %}
+            
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Facebook</a></li>
-            <li><a class="white-text" href="#!">Linkedin</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
+          <li><a class="white-text" href="https://www.facebook.com/smit.profile">Facebook</a></li>
+            <li><a class="white-text" href="https://twitter.com/smit_shah_">Twitter</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/smitphpdeveloper/">LinkedIn</a></li>
           </ul>
         </div>
       </div>
