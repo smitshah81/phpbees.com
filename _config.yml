@@ -24,3 +24,4 @@ gems:
 permalink: ordinal
 disqus:
   shortname: php-bees
+google_analytics: UA-70275005-1
