@@ -11,7 +11,7 @@ layout: page
           {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
           <div class="">{{ post.date | date: date_format }}</div>
           <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-          
+         
           <p>
              {{ post.content |strip_html | truncatewords: 100 }}
              
