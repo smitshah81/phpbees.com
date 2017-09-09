@@ -21,3 +21,5 @@ sass:
 gems:
 - jekyll-sitemap
 permalink: ordinal
+disqus:
+  shortname: php-bees
