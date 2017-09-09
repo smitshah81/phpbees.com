@@ -48,9 +48,7 @@ socket_close($mysock);
 
 
 ##### The Client
-
-<code>
-
+`
 error_reporting(E_ALL);
 $address = "127.0.0.1";
 $port = 10000;
@@ -81,6 +79,6 @@ while (true == true)
 
 echo "Closing socket...";
 socket_close($socket);
-</code>
+`
 
 As you can see SP functions are similar to file functions so it's easy to understand.
