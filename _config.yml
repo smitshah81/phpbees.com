@@ -19,7 +19,7 @@ twitter_username: smit_shah_
 github_username: smitshah81
 sass:
   style: compressed
-gems:
+plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-feed
