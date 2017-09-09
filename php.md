@@ -1,7 +1,7 @@
 ---
 title: PHP
-permalink: "/Buttoms/"
-position: 3
+permalink: "/php/"
+position: 0
 layout: page
 ---
 

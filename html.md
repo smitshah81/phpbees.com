@@ -1,6 +1,6 @@
 ---
 title: HTML
-permalink: "/table/"
+permalink: "/html/"
 position: 1
 layout: page
 ---

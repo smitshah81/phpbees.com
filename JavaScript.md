@@ -1,7 +1,7 @@
 ---
 title: JavaScript
-permalink: "/css/"
-position: 0
+permalink: "/javascript/"
+position: 3
 layout: page
 ---
 
