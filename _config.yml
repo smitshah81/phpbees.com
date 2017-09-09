@@ -9,6 +9,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  tags:
+    title: tags
+    output: true
 author: Smit Shah
 email: smitshah81@gmail.com
 description: 'PHPBees is programming blog created from a programmer and dedicated
