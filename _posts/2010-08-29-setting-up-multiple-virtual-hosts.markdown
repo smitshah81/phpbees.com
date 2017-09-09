@@ -6,6 +6,7 @@ categories:
 tags:
 - apache
 - server
+author: Smit Shah
 ---
 
 Few days ago I had face a problem,"How to use different domains on localhost?"so at that time i doesn't know how to use different/multiple domain on localhost so i just put project on Development server and then i check the functionality.
