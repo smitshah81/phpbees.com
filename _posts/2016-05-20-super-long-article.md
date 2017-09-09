@@ -3,7 +3,6 @@ title: Some articles are just so long they deserve a really long title to see if
   will break well
 date: 2016-05-20 05:30:00 +05:30
 categories:
-- misc
 - test
 layout: post
 ---
