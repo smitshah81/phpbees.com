@@ -6,7 +6,8 @@ layout: page
 ---
 
 <div class="collection">
-        {% for tag in site.categories.test %}
+        {% for tag in site.categories %}
+{% if tag[0] == "test" %}
 		 {% assign pages_list = tag[1] %}
  {% for post in pages_list %}
         <div class="col s6 m4  collection-item hoverable">
@@ -21,5 +22,6 @@ layout: page
          <p> <a href="{{ post.url | relative_url }}" class="btn light-blue">Read More</a></p>
         </div>
         {% endfor %}
+{% endif %}
         {% endfor %}
         </div>  
