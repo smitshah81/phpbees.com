@@ -3,7 +3,7 @@ title: PHPBees
 timezone: Asia/Kolkata
 collections:
   tags:
-    title: Post tags
+    title: Post Tags
     output: true
   posts:
     title: Posts
