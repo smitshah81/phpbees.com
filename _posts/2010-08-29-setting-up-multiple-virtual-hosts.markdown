@@ -36,7 +36,7 @@ So to get our fake hostnames working, they each should have an entry resolving t
 127.0.0.1        projectc-beta2
 192.168.1.18     testhost.testdomain.com testhost`
 
-
+##### Test the Configuration
 To test the configuration, you should ping the fake hosts and if you had followed the steps above correctly, you should get a response from 127.0.0.1 for the projecta, projectb, projectcand projectc-beta2 hosts. This concludes the host resolving section of this tutorial.
 Configuring Apache
 
