@@ -6,7 +6,9 @@ layout: page
 ---
 
 <div class="collection">
-        {% for post in taxonomy['categories']['test'].posts %}
+        {% for tag in site.categories.test %}
+		 {% assign pages_list = tag[1] %}
+ {% for post in pages_list %}
         <div class="col s6 m4  collection-item hoverable">
           {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
           <div class="">{{ post.date | date: date_format }}</div>
@@ -18,6 +20,6 @@ layout: page
           </p>
          <p> <a href="{{ post.url | relative_url }}" class="btn light-blue">Read More</a></p>
         </div>
-        
+        {% endfor %}
         {% endfor %}
         </div>  
