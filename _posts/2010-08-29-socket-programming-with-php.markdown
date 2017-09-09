@@ -18,35 +18,24 @@ Here's a simple script for sending messages back and forth between a server and 
 `error_reporting(E_ALL);
 $address = "127.0.0.1";
 $port = "10000";
- 
-
 /* create a socket in the AF_INET family, using SOCK_STREAM for TCP connection */
 $mysock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-
 socket_bind($mysock, $address, $port);
-
 socket_listen($mysock, 5);
-
 $client = socket_accept($mysock);
-
 echo "Server started, accepting connections...\n";
- 
-
 $i = 0;
 while (true == true)
 {
     $i++;
     echo "Sending $i to client.\n";
     socket_write($client, $i, strlen($i));
-    
     $input = socket_read($client, 2048);
     echo "Response from client is: $input\n";
     sleep(5);
 }
-
 echo "Closing sockets...";
 socket_close($client);
-
 socket_close($mysock);
 
 ?>`
@@ -59,18 +48,14 @@ socket_close($mysock);
 `
 <?php
 error_reporting(E_ALL);
-
 $address = "127.0.0.1";
 $port = 10000;
-
-/* Create a TCP/IP socket. */
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if ($socket === false) {
     echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";
 } else {
     echo "socket successfully created.\n";
 }
-
 echo "Attempting to connect to '$address' on port '$port'...";
 $result = socket_connect($socket, $address, $port);
 if ($result === false) {
@@ -85,7 +70,6 @@ while (true == true)
     $i++;
     echo "Sending $i to server.\n";
     socket_write($socket, $i, strlen($i));
-    
     $input = socket_read($socket, 2048);
     echo "Response from server is: $input\n";
     sleep(5);
