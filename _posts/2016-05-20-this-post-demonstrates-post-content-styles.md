@@ -1,11 +1,12 @@
 ---
 title: This post demonstrates post content styles
-date: 2016-05-20 00:00:00 Z
+date: 2016-05-20 05:30:00 +05:30
 categories:
 - junk
-layout: post
+- test
 author: Bart Simpson
 meta: Springfield
+layout: post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
