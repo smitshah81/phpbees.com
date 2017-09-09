@@ -8,9 +8,10 @@
         <div class="col l3 s12">
           <h5 class="white-text">Tags</h5>
           <ul>
-            {% for tag in taxonomy.tags %}
-             <li class="chip"><i class="material-icons">label</i> <a href="{{ tag.url }}">{{ tag.value }}</a></li>
-            {% endfor %}
+           {% for tag in site.tags %}
+  {% assign t = tag | first %}
+    <li><a href="/{{ site.tag_page_dir }}/{{ t | slugify: 'pretty' }}/">{{ t }}</a></li>
+  {% endfor %}
             
           </ul>
         </div>
