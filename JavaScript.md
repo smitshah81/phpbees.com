@@ -6,7 +6,7 @@ layout: page
 ---
 
 {% for tag in site.categories %}
-{% if tag[0] == "test" %}
+{% if tag[0] == "javascript" %}
   <ul class="collection">
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}
