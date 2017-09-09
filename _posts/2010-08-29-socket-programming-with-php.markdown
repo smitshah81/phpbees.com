@@ -14,10 +14,14 @@ Here's a simple script for sending messages back and forth between a server and 
 
 
 ##### The Server
-`<?php
+
+<code>
 error_reporting(E_ALL);
+
 $address = "127.0.0.1";
+
 $port = "10000";
+
 /* create a socket in the AF_INET family, using SOCK_STREAM for TCP connection */
 $mysock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 socket_bind($mysock, $address, $port);
@@ -38,15 +42,15 @@ echo "Closing sockets...";
 socket_close($client);
 socket_close($mysock);
 
-?>`
+</code>
 
 
 
 
 ##### The Client
 
-`
-<?php
+<code>
+
 error_reporting(E_ALL);
 $address = "127.0.0.1";
 $port = 10000;
@@ -77,6 +81,6 @@ while (true == true)
 
 echo "Closing socket...";
 socket_close($socket);
-?>`
+</code>
 
 As you can see SP functions are similar to file functions so it's easy to understand.
