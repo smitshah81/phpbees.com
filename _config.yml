@@ -29,4 +29,4 @@ disqus:
   shortname: php-bees
 google_analytics: UA-70275005-1
 tag_page_layout: tag
-tag_page_dir: tags
+tag_page_dir: tag
