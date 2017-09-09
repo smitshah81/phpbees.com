@@ -6,7 +6,7 @@ layout: page
 ---
 
 <div class="collection">
-        {% for post in site.posts.categories['test'] %}
+        {% for post in taxonomy['categories']['test'] %}
         <div class="col s6 m4  collection-item hoverable">
           {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
           <div class="">{{ post.date | date: date_format }}</div>
