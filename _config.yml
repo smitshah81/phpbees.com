@@ -36,3 +36,21 @@ disqus:
 google_analytics: UA-70275005-1
 tag_page_layout: tag_page
 tag_page_dir: post-tags
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink:
+    layout: post
+    image: 
+    description: 
+    button:
+      title: 
+      url: 
+- scope:
+    path: ''
+    type: post_tags
+  values:
+    layout: tag_page
+
