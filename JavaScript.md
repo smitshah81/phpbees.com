@@ -7,7 +7,7 @@ layout: page
 
 {% for tag in site.categories %}
 {% if tag[0] == "test" %}
-  <ul >
+  <ul class="collection">
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}
       {% if post.title != null %}
@@ -18,8 +18,8 @@ layout: page
 
 
 
-{% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-<time datetime="{{ post.date | date: date_format }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+{% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}<div>
+<time datetime="{{ post.date | date: date_format }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></div>
 <span class="title">
 <a class="post-link" href="{{ site.url }}{{ post.url }}">{{ post.title | escape }}</a>
 </span>
