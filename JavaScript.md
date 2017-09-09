@@ -12,7 +12,25 @@ layout: page
     {% for post in pages_list %}
       {% if post.title != null %}
       {% if group == null or group == post.group %}
-      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
+
+
+     <div class="col s6 m4  collection-item hoverable">
+
+
+
+{% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
+<time datetime="{{ post.date | date: date_format }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+<span class="title">
+<a class="post-link" href="{{ site.url }}{{ post.url }}">{{ post.title | escape }}</a>
+</span>
+<p>
+             {{ post.content |strip_html | truncatewords: 100 }}
+             
+          </p>
+ <p> <a href="{{ post.url | relative_url }}" class="btn light-blue">Read More</a></p>
+</div>
+
+
       {% endif %}
       {% endif %}
     {% endfor %}
