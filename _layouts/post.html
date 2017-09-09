@@ -46,10 +46,10 @@ layout: default
           <div class="chip">{{ category }}</div>
            {% endfor %}
           {% endif %} -->
-          
+          <h6>Tags</h6>
           {% for tag in page.tags %}
     
-       <div class="chip"><i class="material-icons">label</i>{{ tag }}</div>
+       <div class="chip"><i class="material-icons orange">label</i><a href="javascript:void(0);">{{ tag }}</a></div>
     
 {% endfor %}
 
