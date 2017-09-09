@@ -5,6 +5,7 @@ collections:
   post_tags:
     title: Post Tags
     output: true
+    permalink: post_tags
   posts:
     title: Posts
     output: true
