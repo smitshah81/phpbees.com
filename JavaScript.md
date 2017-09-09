@@ -6,7 +6,7 @@ layout: page
 ---
 
 {% for tag in site.categories %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h3>
+{% if tag[0] == "test" %}
   <ul >
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}
@@ -19,4 +19,5 @@ layout: page
     {% assign pages_list = nil %}
     {% assign group = nil %}
   </ul>
+{% endif %}
 {% endfor %}
