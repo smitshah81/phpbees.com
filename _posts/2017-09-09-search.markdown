@@ -1,6 +1,7 @@
 ---
 title: Search
 date: 2017-09-09 14:27:00 +05:30
+layout: tag
 ---
 
 <ul>
