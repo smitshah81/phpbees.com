@@ -5,6 +5,7 @@ categories:
 - php
 tags:
 - Socket Programming
+author: Smit Shah
 ---
 
 To understand Socket Programming(SP) you have to understand Network Communication fundamental first and I assume that you already read it. :)
