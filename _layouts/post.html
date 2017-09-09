@@ -49,7 +49,7 @@ layout: default
           <h6>Tags</h6>
           {% for tag in page.tags %}
     
-       <div class="chip orange">{{ tag }}</div>
+       <div class="chip orange"><a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'ordinal' }}/">{{ tag }}</a></div>
     
 {% endfor %}
 
