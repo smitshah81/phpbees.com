@@ -94,7 +94,7 @@ ServerName projectb`
 
 
 
-### Testing the Setup
+##### Testing the Setup
 Once all of the above is done, you can now test your configuration. However, you need to restart the Apache service in order to apply the changes made above. Here’s how to do it if you’ve installed Apache as a service (9 times out of time, this is how it’s normally installed):
 
 
