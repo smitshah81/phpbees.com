@@ -66,5 +66,3 @@ sleep(5);
 }
 echo "Closing socket...";
 socket_close($socket);`
-
-As you can see SP functions are similar to file functions so it's easy to understand.
