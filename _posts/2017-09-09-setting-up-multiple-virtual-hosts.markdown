@@ -21,6 +21,7 @@ If you were to open these files in a text editor, you’ll see content similar t
 127.0.0.1        localhost
 192.168.1.18     testhost.testdomain.com testhost
 </code>
+<p>
 All hosts files will have the localhost entry which resolves to 127.0.0.1, also known as the loopback address. Basically, what the first line in the host file illustrated above tells us is to route all network packets addressed to localhost to the computer you’re using.
 So to get our fake hostnames working, they each should have an entry resolving to 127.0.0.1 in your hosts file. Example as follows:
 127.0.0.1        localhost
@@ -81,3 +82,4 @@ For Windows:
 2. Look for Apache in the services list and select it
 3. Click the Restart Service button
 If you’ve followed through this guide closely, you should now have a working Apache installation with multiple named local sites.
+</p>
