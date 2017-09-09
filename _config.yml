@@ -23,7 +23,7 @@ gems:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-feed
-- jekyll-tagging
+- jekyll/tagging
 permalink: ordinal
 disqus:
   shortname: php-bees
