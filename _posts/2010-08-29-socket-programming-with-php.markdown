@@ -39,9 +39,8 @@ socket_close($mysock);`
 ##### The Client
 
 
-`error_reporting(E_ALL);`
-
-`$address = "127.0.0.1";
+`error_reporting(E_ALL);
+$address = "127.0.0.1";
 $port = 10000;
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if ($socket === false) {
