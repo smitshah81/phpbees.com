@@ -47,9 +47,9 @@ layout: default
            {% endfor %}
           {% endif %}
           
-          {% for tag in taxonomy.tags %}
+          {% for tag in page.tags %}
     
-       <div class="chip"><i class="material-icons">label</i> <a href="{{ tag.url }}">{{ tag.value }}</a></div>
+       <div class="chip"><i class="material-icons">label</i>{ tag }}</div>
     
 {% endfor %}
 
