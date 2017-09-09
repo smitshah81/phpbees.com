@@ -80,7 +80,6 @@ For Linux:
 AllowOverride All
 Order allow,deny
 Allow from all
-
 DocumentRoot /web/projectb
 ServerName projectb`
 
@@ -90,7 +89,6 @@ For Windows:
 AllowOverride All
 Order allow,deny
 Allow from all
-
 DocumentRoot "C:\web\projectb"
 ServerName projectb`
 
