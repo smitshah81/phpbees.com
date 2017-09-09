@@ -2,6 +2,9 @@
 title: PHPBees
 timezone: Asia/Kolkata
 collections:
+  post-tags:
+    title: Post Tags
+    output: true
   posts:
     title: Posts
     output: true
