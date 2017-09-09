@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+<div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+    {% include header.html %}
+
+
+        {{ content }}
+
+    {% include footer.html %}
+      
+    {% include script.html %}
+
+  </body>
+
+</html>

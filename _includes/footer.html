@@ -1,0 +1,37 @@
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Me</h5>
+          <p class="grey-text text-lighten-4">I am Programmer and I had created this blog for people like me who are facing challenges every day in programming.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Tags</h5>
+          <ul>
+          {% for stag in site.tag %}
+  {% assign t = stag | first %}
+    <li><a href="/{{ site.tag_page_dir }}/{{ t  }}.html">{{ t }}</a></li>
+  {% endfor %}
+            
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+          <li><a class="white-text" href="https://www.facebook.com/smit.profile">Facebook</a></li>
+            <li><a class="white-text" href="https://twitter.com/smit_shah_">Twitter</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/smitphpdeveloper/">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span style="text-align: right; float: right">
+                Copyright © 2017 <a href="http://www.smitshah.in" class="orange-text text-lighten-3">Smit Shah</a>.
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

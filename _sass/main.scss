@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.shadow-demo {
+    background-color: #26a69a;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+h1.page-title {
+    font-weight: 500;
+    font-size: 2.3em;
+    text-align: center;
+    color: #29b6f6;
+}
+.col.grid-example {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: tomato;
+    color: white;
+    padding: 0;
+}
+.collection .collection-item.avatar {
+    padding-right: 30px;
+}
+.last-post {
+    padding: 10px 0 15px;
+}
+.last-post .collection .collection-item.avatar>.date-post {
+    position: absolute;
+    width: 87px;
+    height: 54px;
+    overflow: hidden;
+    left: 0px;
+    display: inline-block;
+    padding: 16px 0;
+    vertical-align: middle;
+    background: #ad1457;
+    color: #fff;
+    text-align: center;
+    top: 0;
+    border-radius: 0 0 5px 0;
+}
+.txt-center {
+    text-align: center;
+}
+.post-header h1.post-title {
+    color: #29b6f6;
+    font-size: 2.8em;
+    font-weight: 800;
+}
+.post-header time {
+    color: #cacaca;
+    font-size: 0.9em;
+}
+p.rss-subscribe {
+    margin: 0;
+}
+span.card-title.activator.grey-text.text-darken-4 {
+    font-size: 20px;
+}
+.section h5 {
+    margin-left: 10px;
+}
+.collection .collection-item.avatar .title,.collection .collection-item.avatar p{margin: 20px;}
+a {cursor:pointer;}
+.a2a_svg {
+    height: 40px !important;
+    line-height: 40px !important;
+    width: 40px !important;
+}
+pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    .post-content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
