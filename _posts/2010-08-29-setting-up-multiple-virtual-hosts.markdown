@@ -16,11 +16,11 @@ so i got solution as always :)
 
 The multiple hostnames such as projecta, projectb, projectc and projectc-beta2 can be set in either of these hosts configuration files (also referred to as hosts files) depending on your operating system:
 
-`Windows: C:\WINDOWS\SYSTEM32\DRIVERS\ETC\HOSTS (assuming your Windows installation is in C:\WINDOWS).`\
-`For Linux: /etc/hosts`\
-`If you were to open these files in a text editor, you’ll see content similar to the following:`\
-`127.0.0.1        localhost`\
-`192.168.1.18     testhost.testdomain.com testhost`
+`Windows: C:\WINDOWS\SYSTEM32\DRIVERS\ETC\HOSTS (assuming your Windows installation is in C:\WINDOWS).
+For Linux: /etc/hosts
+If you were to open these files in a text editor, you’ll see content similar to the following:
+127.0.0.1        localhost
+192.168.1.18     testhost.testdomain.com testhost`
 
 All hosts files will have the localhost entry which resolves to 127.0.0.1, also known as the loopback address. Basically, what the first line in the host file illustrated above tells us is to route all network packets addressed to localhost to the computer you’re using.\
 So to get our fake hostnames working, they each should have an entry resolving to 127.0.0.1 in your hosts file. Example as follows:
