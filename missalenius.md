@@ -1,6 +1,6 @@
 ---
 title: Miscellaneous
-permalink: "/carousel/"
+permalink: "/miscellaneous/"
 position: 2
 layout: page
 ---
