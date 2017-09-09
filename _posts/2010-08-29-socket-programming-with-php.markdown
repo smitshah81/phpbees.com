@@ -14,8 +14,8 @@ Here's a simple script for sending messages back and forth between a server and 
 
 
 ##### The Server
-<?php
-`error_reporting(E_ALL);
+`<?php
+error_reporting(E_ALL);
 $address = "127.0.0.1";
 $port = "10000";
 /* create a socket in the AF_INET family, using SOCK_STREAM for TCP connection */
