@@ -2,7 +2,6 @@
 title: This post demonstrates post content styles
 date: 2016-05-20 05:30:00 +05:30
 categories:
-- junk
 - test
 author: Bart Simpson
 meta: Springfield
