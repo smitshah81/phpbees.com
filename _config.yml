@@ -26,7 +26,6 @@ plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-feed
-- 
 permalink: ordinal
 disqus:
   shortname: php-bees
