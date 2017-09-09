@@ -1,5 +1,5 @@
 ---
-title: Search
+title: Tags
 date: 2017-09-09 14:38:00 +05:30
 permalink: "/tags"
 layout: tag
