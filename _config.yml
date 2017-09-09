@@ -24,6 +24,8 @@ plugins:
 - jekyll-seo-tag
 - jekyll-feed
 - jekyll/tagging
+gems:
+- jekyll/tagging
 permalink: ordinal
 disqus:
   shortname: php-bees
