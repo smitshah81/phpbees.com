@@ -13,12 +13,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  defaults:
-  - scope:
-      path: ''
-      type: post_tags
-    values:
-      layout: tag_page
 author: Smit Shah
 email: smitshah81@gmail.com
 description: 'PHPBees is programming blog created from a programmer and dedicated
