@@ -5,21 +5,18 @@ position: 3
 layout: page
 ---
 
-<div class="collection">
-        {% for tag in site.categories.test %}
-		 {% assign pages_list = tag[1] %}
- {% for post in pages_list %}
-        <div class="col s6 m4  collection-item hoverable">
-          {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-          <div class="">{{ post.date | date: date_format }}</div>
-          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-         
-          <p>
-             {{ post.content |strip_html | truncatewords: 100 }}
-             
-          </p>
-         <p> <a href="{{ post.url | relative_url }}" class="btn light-blue">Read More</a></p>
-        </div>
-        {% endfor %}
-        {% endfor %}
-        </div>  
+{% for tag in site.categories %}
+  <h3 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h3>
+  <ul >
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list %}
+      {% if post.title != null %}
+      {% if group == null or group == post.group %}
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+{% endfor %}
