@@ -7,4 +7,5 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-feed'
 gem 'jekyll-tagging'
+gem 'github-pages'
 # gem "rails"
