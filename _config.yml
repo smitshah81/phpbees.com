@@ -21,6 +21,8 @@ sass:
   style: compressed
 gems:
 - jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
 permalink: ordinal
 disqus:
   shortname: php-bees
