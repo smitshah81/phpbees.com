@@ -10,7 +10,7 @@ collections:
     title: Uploads
     output: true
   tags:
-    title: tags
+    title: post tags
     output: true
 author: Smit Shah
 email: smitshah81@gmail.com
