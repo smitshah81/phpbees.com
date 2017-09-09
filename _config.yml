@@ -2,15 +2,15 @@
 title: PHPBees
 timezone: Asia/Kolkata
 collections:
+  tags:
+    title: Post tags
+    output: true
   posts:
     title: Posts
     output: true
     comments: true
   uploads:
     title: Uploads
-    output: true
-  tags:
-    title: post tags
     output: true
 author: Smit Shah
 email: smitshah81@gmail.com
