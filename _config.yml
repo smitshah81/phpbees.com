@@ -5,7 +5,6 @@ collections:
   post_tags:
     title: Post Tags
     output: true
-    layout: tag_page
   posts:
     title: Posts
     output: true
