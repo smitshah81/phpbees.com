@@ -27,7 +27,7 @@ defaults:
       url: 
 - scope:
     path: ''
-    type: post_tags
+    type: post_tag
   values:
     layout: tag_page
 author: Smit Shah
