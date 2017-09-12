@@ -4,7 +4,7 @@ source "https://rubygems.org"
 #git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem 'jekyll'
 gem 'github-pages'
-gem 'jekyll-tagging'
+
 
 group :jekyll_plugins do
   gem 'jekyll-admin' 
@@ -13,6 +13,7 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-paginate'
   gem 'github-pages'
+  gem 'jekyll-tagging'
 end
 # gem "rails"
 #bundle exec jekyll serve
