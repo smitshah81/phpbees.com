@@ -23,13 +23,11 @@ github_username: smitshah81
 sass:
   style: compressed
 plugins:
-
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll/tagging
-  - jekyll-paginate
-
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jekyll/tagging
+- jekyll-paginate
 permalink: ordinal
 disqus:
   shortname: php-bees
