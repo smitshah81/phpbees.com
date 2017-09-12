@@ -1,31 +1,35 @@
+---
 title: PHPBees
 timezone: Asia/Kolkata
 collections:
-  tags:
-    title: Tags
-    output: true
   posts:
     title: Posts
     output: true
     comments: true
+  tags:
+    title: Tags
+    output: true
   uploads:
     title: Uploads
     output: true
 author: Smit Shah
 email: smitshah81@gmail.com
-description: >
-  PHPBees is programming blog created from a programmer and dedicated to a
-  programmer.Tutorial focused on PHP Programming,JavaScript and it's framework.
+description: 'PHPBees is programming blog created from a programmer and dedicated
+  to a programmer.Tutorial focused on PHP Programming,JavaScript and it''s framework.
+
+'
 twitter_username: smit_shah_
 github_username: smitshah81
 sass:
   style: compressed
 plugins:
+
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-
+  - jekyll/tagging
   - jekyll-paginate
+
 permalink: ordinal
 disqus:
   shortname: php-bees
