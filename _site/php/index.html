@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
-    <link rel="canonical" href="http://0.0.0.0:8080/php/" />
+    <link rel="canonical" href="/php/" />
     <link rel="alternate" type="application/rss+xml" title="PHPBees" href="/feed.xml" />
   
     
@@ -62,12 +62,6 @@
                     
                     
                     <li><a href="/php/">PHP</a></li>
-                    
-                
-                    
-                    
-                
-                    
                     
                 
                     
@@ -133,12 +127,6 @@
                     
                     
                 
-                    
-                    
-                
-                    
-                    
-                
              
           </ul>        
 
@@ -164,7 +152,7 @@
 <div>
 <time datetime="29 Aug 2010" itemprop="datePublished">August 29, 2010</time></div>
 <span class="title">
-<a class="post-link" href="http://0.0.0.0:8080/php/2010/241/socket-programming-with-php.html">Socket Programming With Php</a>
+<a class="post-link" href="/php/2010/241/socket-programming-with-php.html">Socket Programming With Php</a>
 </span>
 <p>
              To understand Socket Programming(SP) you have to understand Network Communication fundamental first and I assume that you already read it. :) Here’s a simple script for sending messages back and forth between a server and client. At this point, the code is fairly rough because once it enters the while loop, it doesn’t stop but it can be modified and fixed.(TCP/IP) Example. The Server error_reporting(E_ALL); $address = "127.0.0.1"; $port = "10000"; $mysock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP); socket_bind($mysock, $address, $port); socket_listen($mysock, 5); $client = socket_accept($mysock); echo "Server started, accepting connections...\n"; $i = 0; while (true == true) { $i++; echo "Sending...
