@@ -6,10 +6,6 @@ collections:
     title: Posts
     output: true
     comments: true
-  tags:
-    title: Tags
-    output: true
-    permalink: "/tags"
   uploads:
     title: Uploads
     output: true
