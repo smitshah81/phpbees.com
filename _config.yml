@@ -2,33 +2,16 @@
 title: PHPBees
 timezone: Asia/Kolkata
 collections:
-  post_tags:
-    title: Post Tags
-    output: true
   posts:
     title: Posts
     output: true
     comments: true
+  tags:
+    title: Tags
+    output: true
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: 
-    layout: post
-    image: 
-    description: 
-    button:
-      title: 
-      url: 
-- scope:
-    path: ''
-    type: post_tags
-  values:
-    layout: tag_page
 author: Smit Shah
 email: smitshah81@gmail.com
 description: 'PHPBees is programming blog created from a programmer and dedicated
@@ -44,12 +27,11 @@ plugins:
 - jekyll-seo-tag
 - jekyll-feed
 - jekyll/tagging
-gems:
-- jekyll/tagging
+- jekyll-paginate
 permalink: ordinal
 disqus:
   shortname: php-bees
 google_analytics: UA-70275005-1
 tag_page_layout: tag_page
-tag_page_dir: post-tags
+tag_page_dir: tags
 plugins_dir: _plugins
