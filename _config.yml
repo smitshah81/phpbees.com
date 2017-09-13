@@ -29,7 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll/tagging
   - jekyll-paginate
-
+  - jekyll-optional-front-matter
 permalink: ordinal
 disqus:
   shortname: php-bees
