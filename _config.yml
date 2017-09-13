@@ -30,7 +30,6 @@ plugins:
 - jekyll/tagging
 - jekyll-paginate
 - jekyll-optional-front-matter
-permalink: ordinal
 disqus:
   shortname: php-bees
 google_analytics: UA-70275005-1
