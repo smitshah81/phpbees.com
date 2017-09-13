@@ -1,6 +1,6 @@
 ---
 title: Setting up multiple virtual hosts
-date: 2010-08-29 06:03:00 +0000
+date: 2010-08-29 11:33:00 +05:30
 categories:
 - miscellaneous
 tags:
