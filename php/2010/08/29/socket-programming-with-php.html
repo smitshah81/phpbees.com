@@ -5,14 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>PHPBees</title>
-    <meta name="description" content="PHPBees is programming blog created from a programmer and dedicated to a programmer.Tutorial focused on PHP Programming,JavaScript and it&#39;s framework." />
+    <title>Socket Programming With Php</title>
+    <meta name="description" content="To understand Socket Programming(SP) you have to understand Network Communication fundamental first and I assume that you already read it. :)" />
 
   
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
-    <link rel="canonical" href="http://0.0.0.0:8080/404.html" />
+    <link rel="canonical" href="http://0.0.0.0:8080/php/2010/08/29/socket-programming-with-php.html" />
     <link rel="alternate" type="application/rss+xml" title="PHPBees" href="/feed.xml" />
   
     
@@ -154,13 +154,122 @@
 
 
         <div class="container">
-    <div class="section txt-center">
-      <h1>404</h1>
+    <div class="section">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-      <p><strong>Page not found :(</strong></p>
-      <p>The requested page could not be found.</p>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Socket Programming With Php</h1>
+        <p class="post-meta">
+          <time datetime="2010-08-29T12:38:00+05:30" itemprop="datePublished">
+            
+            29 Aug 2010
+          </time>
+          
+          
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Smit Shah</span></span>
+          </p>
+          
+          <div class="right" style="position: relative; height: 70px;">
+            <div class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; bottom: 100%;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">share</i>
+    </a>
+    
+    
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+    <ul class="a2a_kit a2a_kit_size_32 a2a_default_style">
+      <li><a class="btn-floating a2a_dd" href="https://www.addtoany.com/share"></a></li>
+      <li><a class="btn-floating red a2a_button_google_plus"></a></li>
+      
+      <li><a class="btn-floating blue a2a_button_facebook"></a></li>
+      <li><a class="btn-floating sky-blue a2a_button_twitter"></a></li>
+    </ul>
+  </div>
+          </div>
+        
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p>To understand Socket Programming(SP) you have to understand Network Communication fundamental first and I assume that you already read it. :)</p>
+
+<p>Here’s a simple script for sending messages back and forth between a server and client.  At this point, the code is fairly rough because once it enters the while loop, it doesn’t stop but it can be modified and fixed.(TCP/IP) Example.</p>
+
+<h5 id="the-server">The Server</h5>
+
+<p><code class="highlighter-rouge">error_reporting(E_ALL);
+$address = "127.0.0.1";
+$port = "10000";
+$mysock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+socket_bind($mysock, $address, $port);
+socket_listen($mysock, 5);
+$client = socket_accept($mysock);
+echo "Server started, accepting connections...\n";
+$i = 0;
+while (true == true)
+{
+$i++;
+echo "Sending $i to client.\n";
+socket_write($client, $i, strlen($i));
+$input = socket_read($client, 2048);
+echo "Response from client is: $input\n";
+sleep(5);
+}
+echo "Closing sockets...";
+socket_close($client);
+socket_close($mysock);</code></p>
+
+<h5 id="the-client">The Client</h5>
+
+<p><code class="highlighter-rouge">error_reporting(E_ALL);
+$address = "127.0.0.1";
+$port = 10000;
+$socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+if ($socket === false) {
+echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";
+} else {
+echo "socket successfully created.\n";
+}
+echo "Attempting to connect to '$address' on port '$port'...";
+$result = socket_connect($socket, $address, $port);
+if ($result === false) {
+echo "socket_connect() failed.\nReason: ($result) " . socket_strerror(socket_last_error($socket)) . "\n";
+} else {
+echo "successfully connected to $address.\n";
+}$i = 0;
+while (true == true)
+{
+$i++;
+echo "Sending $i to server.\n";
+socket_write($socket, $i, strlen($i));
+$input = socket_read($socket, 2048);
+echo "Response from server is: $input\n";
+sleep(5);
+}
+echo "Closing socket...";
+socket_close($socket);</code></p>
+
+         <!-- 
+          
+          <div class="chip">php</div>
+           
+           -->
+          <h6>Tags</h6>
+          
+    
+       <div class="chip orange"><a href="/tags/socket programming.html">socket programming</a></div>
+    
+
+
+      </div>
+      
+        
+
+      
+    </article>
     </div>
 </div>
+
 
       <footer class="page-footer orange">
     <div class="container">
