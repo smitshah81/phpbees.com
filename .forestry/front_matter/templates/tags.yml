@@ -1,0 +1,12 @@
+---
+pages:
+- _posts/2017-09-14-test-post.md
+hide_body: false
+fields:
+- type: text
+  default: name
+  label: Name
+  name: name
+- type: tag_list
+  name: tag
+  label: tag

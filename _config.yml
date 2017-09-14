@@ -6,10 +6,6 @@ collections:
     title: Posts
     output: true
     comments: true
-  tags:
-    title: Tags
-    output: true
-    permalink: "/tags"
   uploads:
     title: Uploads
     output: true
@@ -34,5 +30,5 @@ disqus:
   shortname: php-bees
 google_analytics: UA-70275005-1
 tag_page_layout: tag_page
-tag_page_dir: "tags"
+tag_page_dir: tags
 plugins_dir: _plugins
