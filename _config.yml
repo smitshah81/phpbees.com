@@ -33,3 +33,4 @@ tag_page_layout: tag_page
 tag_page_dir: tags
 plugins_dir: _plugins
 repository: "smitshah81/phpbees.com"
+theme: minima
