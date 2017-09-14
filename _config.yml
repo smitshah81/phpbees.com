@@ -21,7 +21,7 @@ sass:
   style: compressed
 plugins:
 - jekyll-sitemap
-#- github-pages
+- github-pages
 - jekyll-feed
 - jekyll/tagging
 #- jekyll-paginate
