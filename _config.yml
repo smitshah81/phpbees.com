@@ -21,9 +21,10 @@ sass:
   style: compressed
 plugins:
 - jekyll-sitemap
+- github-pages
 - jekyll-feed
 - jekyll/tagging
-- jekyll-paginate
+#- jekyll-paginate
 - jekyll-optional-front-matter
 disqus:
   shortname: php-bees
